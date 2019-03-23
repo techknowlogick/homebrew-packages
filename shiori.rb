@@ -17,7 +17,7 @@ class Shiori < Formula
   end
 
   head do
-    url "#{head}", :branch => "master"
+    url "https://github.com/techknowlogick/shiori.git", :branch => "master"
     depends_on "go" => :build
   end
 
