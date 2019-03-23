@@ -26,7 +26,8 @@ class Shiori < Formula
     case
     when build.head?
       ENV["GO111MODULE"]="on"
-      system "make dep && make build"
+      system "make dep"
+      system "make build"
       bin.install "#{buildpath}/shiori" => "shiori"
     else
       bin.install "#{buildpath}/shiori-darwin-10.6-amd64" => "shiori"
