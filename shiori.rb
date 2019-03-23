@@ -19,6 +19,7 @@ class Shiori < Formula
   head do
     url "https://github.com/techknowlogick/shiori.git", :branch => "master"
     depends_on "go" => :build
+    depends_on "node" => :build
   end
 
   def install
